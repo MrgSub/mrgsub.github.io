@@ -61,7 +61,7 @@ const ItemContainer = s.div`
 	display: block;
 	width: 100%;
 	overflow: hidden;
-	border-bottom:1px solid rgba(0,0,0,0.1); 
+	border:1px solid rgba(0,0,0,0.05); 
 `;
 
 const ItemThumb = s.div`
@@ -114,6 +114,35 @@ const Projects = [
 		href: "https://reship.com",
 		cover:
 			"https://assets.website-files.com/5f0c9cbc3a05e30508c762fa/5f2c63a2426902dd05a1e7d9_Monark%20Labs-p-1080.jpeg",
+	},
+	{
+		title: "PICKMO",
+		date: "2021 - Present",
+		subtitle: "What do you want to watch?",
+		href: "https://pickmo.app/",
+		cover: "https://i.imgur.com/SkeEHJ0.png",
+	},
+	{
+		title: "Ballistic Supplements",
+		date: "2021 - Present",
+		subtitle: "",
+		href: "https://ballisticsupps.myshopify.com/",
+		cover: "",
+	},
+	{
+		title: "Gogo Brokers",
+		date: "2021",
+		subtitle:
+			"Partnering with well established brokers, we deliver the lowest priced customs brokering services for USA to Canada imports.",
+		href: "https://www.gogobrokers.com/",
+		cover: "",
+	},
+	{
+		title: "Smart Nora",
+		date: "2021",
+		subtitle: "The revolutionary contact-free snoring solution.",
+		href: "https://www.smartnora.com/",
+		cover: "",
 	},
 	{
 		title: "Cocobum",
@@ -188,26 +217,24 @@ export default function Home() {
 			</Head>
 			<BodyContainer>
 				<BodyInner>
-					<a href={"mailto:1@ajxb.net"}>
-						<BodyHeader>
-							<div>
-								<BodyTitle>AJXB</BodyTitle>
-								<BodySubtitle>
-									Creative Development
-								</BodySubtitle>
-							</div>
-							<div
-								style={{
-									fontWeight: "bold",
-									fontSize: 40,
-									display: "flex",
-									justifyContent: "center",
-								}}
-							>
+					<BodyHeader>
+						<div>
+							<BodyTitle>AJXB</BodyTitle>
+							<BodySubtitle>Creative Development</BodySubtitle>
+						</div>
+						<div
+							style={{
+								fontWeight: "bold",
+								fontSize: 40,
+								display: "flex",
+								justifyContent: "center",
+							}}
+						>
+							<a href={"mailto:1@ajxb.net"}>
 								<FcFeedback />
-							</div>
-						</BodyHeader>
-					</a>
+							</a>
+						</div>
+					</BodyHeader>
 					<PortfolioContainer>
 						<PortfolioTitle>Projects</PortfolioTitle>
 						<PortfolioGrid>
@@ -224,16 +251,6 @@ export default function Home() {
 					</PortfolioContainer>
 				</BodyInner>
 				<FooterContainer>
-					<div>
-						Currently making awesome projects at{" "}
-						<a
-							style={{ fontWeight: "bold" }}
-							href={"https://monark.com"}
-						>
-							Monark
-						</a>
-						!
-					</div>
 					<div>
 						Built using React & Next by AJXB Consulting Ltd.{" "}
 						{new Date().getFullYear()}
